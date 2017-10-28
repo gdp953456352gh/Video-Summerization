@@ -7,7 +7,7 @@ height = int(cv.GetCaptureProperty(capture, cv.CV_CAP_PROP_FRAME_HEIGHT))
 fps = cv.GetCaptureProperty(capture, cv.CV_CAP_PROP_FPS)
 codec = cv.GetCaptureProperty(capture, cv.CV_CAP_PROP_FOURCC)
 
-wait = int(1/fps * 1000/1) #Compute the time to wait between each frame query
+wait = int(1/fps * 3000/1) #Compute the time to wait between each frame query
 
 duration = (nbFrames * fps) / 1000 #Compute duration
 
